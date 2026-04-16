@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pride Month Celebritories</title>
+    <style>
+        body {
+            transition: background-color 0.3s ease; /* Smooth color change */
+        }
+    </style>
+</head>
+<body>
+    <a href="#" id="flashLink">Click me to start the festivities!</a>
+
+    <script>
+        const link = document.getElementById('flashLink');
+        const colors = ['#FF5733', '#33FF57', '#3357FF', '#F3FF33', '#FF33F6'];
+        
+        link.addEventListener('click', function(e) {
+            e.preventDefault(); // Prevent link from navigating
+            let i = 0;
+            // Flash colors 5 times
+            const interval = setInterval(() => {
+                document.body.style.backgroundColor = colors[i % colors.length];
+                i++;
+                if (i >= 10) { // Stop after 10 changes
+                    clearInterval(interval);
+                    document.body.style.backgroundColor = 'Black'; // Reset
+                }
+            }, 200); // Speed of flash (milliseconds)
+        });
+    </script>
+</body>
+</html>

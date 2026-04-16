@@ -1,0 +1,47 @@
+body {
+    background-color: black;  
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+h3 {
+    color: aliceblue;
+}
+
+a href {
+    color: blue;
+}
+
+h4 {
+    color: white;
+}
+
+.test-div {
+ width: 175px;
+ height: 550px;
+ background-color: whitesmoke;
+ margin: 135px 10px 10px 125px;
+ padding: 1px;
+
+}
+
+.box {
+    border: none;
+    
+    border-bottom: 2px solid green;
+}
+
+.sidebar {
+    width: 100px;
+    height: 500px;
+    background-color: grey;
+    margin: 100px 0px 0px 100px;
+    padding: 1px;
+    
+}
