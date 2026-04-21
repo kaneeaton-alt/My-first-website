@@ -112,7 +112,6 @@ video {
     margin: 20px auto;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     body {
         flex-direction: column;
