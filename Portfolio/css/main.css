@@ -1,47 +1,144 @@
 body {
-    background-color: black;  
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#sidebar {
+    width: 200px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+#sidebar h3 {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    margin-top: 0;
+}
+
+#sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#sidebar li {
+    margin-bottom: 10px;
+}
+
+#sidebar a {
+    color: #87ceeb;
+    text-decoration: none;
+}
+
+#sidebar a:hover {
+    color: #ffffff;
+}
+
+#content {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 h1 {
     color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 h2 {
     color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 h3 {
     color: aliceblue;
-}
-
-a href {
-    color: blue;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 h4 {
     color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
-.test-div {
- width: 175px;
- height: 550px;
- background-color: whitesmoke;
- margin: 135px 10px 10px 125px;
- padding: 1px;
+a {
+    color: #87ceeb;
+    text-decoration: none;
+}
 
+a:hover {
+    color: #ffffff;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .box {
     border: none;
-    
     border-bottom: 2px solid green;
+    height: 20px;
+    margin-top: 20px;
 }
 
-.sidebar {
-    width: 100px;
-    height: 500px;
-    background-color: grey;
-    margin: 100px 0px 0px 100px;
-    padding: 1px;
-    
+video {
+    display: block;
+    margin: 20px auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+    #sidebar {
+        width: 100%;
+        height: auto;
+        position: static;
+    }
+    .images {
+        flex-direction: column;
+        align-items: center;
+    }
+    video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .images {
+        flex-direction: column;
+        align-items: center;
+    }
+    video {
+        width: 100%;
+        height: auto;
+    }
 }
