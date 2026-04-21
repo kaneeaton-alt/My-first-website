@@ -111,33 +111,3 @@ video {
     display: block;
     margin: 20px auto;
 }
-
-@media (max-width: 768px) {
-    body {
-        flex-direction: column;
-    }
-    #sidebar {
-        width: 100%;
-        height: auto;
-        position: static;
-    }
-    .images {
-        flex-direction: column;
-        align-items: center;
-    }
-    video {
-        width: 100%;
-        height: auto;
-    }
-}
-
-@media (max-width: 600px) {
-    .images {
-        flex-direction: column;
-        align-items: center;
-    }
-    video {
-        width: 100%;
-        height: auto;
-    }
-}
