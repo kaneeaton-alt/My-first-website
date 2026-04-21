@@ -111,3 +111,7 @@ video {
     display: block;
     margin: 20px auto;
 }
+
+html {
+  scroll-behavior: smooth;
+}
